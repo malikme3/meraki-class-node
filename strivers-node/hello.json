@@ -1,0 +1,14 @@
+{
+  "headers": {
+    "Host": "localhost: 3000",
+    "User-Agent": "curl/7.54.0",
+    "Accept": "*/*",
+    "Content-Type": "application/json"
+  },
+  "path": "/teams",
+
+  "httpMethod": "GET",
+  "requestContext": {
+    "authorizer": {}
+  }
+}
