@@ -5,8 +5,12 @@ const express = require('express');
 
 const app = express();
 
-app.use('/teams', async (req: any, res: any, next: any) => {
-  res.send('Hello World!');
+app.use('/users', async (req: any, res: any, next: any) => {
+  try {
+    res.status(200).send('user hanlder');
+  } catch (err) {
+    throw new Error('controller erro');
+  }
 });
 
 module.exports.hello = serverless(app);
